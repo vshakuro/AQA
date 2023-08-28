@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         printThreeWords();
-        res();
+        checkSumSign();
         printColor();
         compareNumbers();
         }
@@ -10,7 +10,7 @@ public class Main {
             System.out.println("Orange\nBanana\nApple");
         }
 
-        public static void res(){
+        public static void checkSumSign(){
             int a = 5;
             int b = 10;
             int sum = a + b;
