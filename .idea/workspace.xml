@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d5fe5b8-3cda-4466-a4c0-4b52778e15a3" name="Changes" comment="adding methods">
-      <change afterPath="$PROJECT_DIR$/AQA.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main/Main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+    <list default="true" id="3d5fe5b8-3cda-4466-a4c0-4b52778e15a3" name="Changes" comment="Adding answers">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +121,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693230231386</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Adding answers">
+      <option name="closed" value="true" />
+      <created>1693941604271</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1693941604271</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -155,6 +159,7 @@
     <MESSAGE value="First project" />
     <MESSAGE value="git ignore" />
     <MESSAGE value="adding methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding methods" />
+    <MESSAGE value="Adding answers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding answers" />
   </component>
 </project>

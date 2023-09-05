@@ -8,9 +8,9 @@ public class Main {
          writeString("String",2);
          System.out.println(checkYear(2020));
          changeArray();
-         fillArrayWithHundreedNumbers();
+         fillArrayWithHundredNumbers();
          multipleNumbers();
-         squareArray();
+         createSquareArray();
          createArrayWithInitialValue(5, 50);
     }
     public static boolean checkSum (int firstNumber, int secondNumber) {
@@ -58,7 +58,7 @@ public class Main {
         }
         System.out.println();
     }
-    public static void fillArrayWithHundreedNumbers () {
+    public static void fillArrayWithHundredNumbers () {
         int[] arr = new int[100];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = i + 1;
@@ -78,7 +78,7 @@ public class Main {
         }
         System.out.println();
     }
-    public static void squareArray () {
+    public static void createSquareArray () {
         int [][] arr = new int [5][5];
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0, k = arr[i].length - 1; j < arr[i].length; j++, k--) {
