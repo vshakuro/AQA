@@ -21,7 +21,7 @@ public class Park {
     public static void main(String[] args) {
         Park.Attraction[] attractionArray = new Attraction[2];
         attractionArray[0] = new Park().new Attraction("Супер 8", "08:00 - 23:00", 50);
-        attractionArray[1] = new Park().new Attraction("Ромашка", "80:00 - 23:00", 30);
+        attractionArray[1] = new Park().new Attraction("Ромашка", "08:00 - 23:00", 30);
         for (Park.Attraction tempAttraction : attractionArray) {
             tempAttraction.attractionInfo();
         }
