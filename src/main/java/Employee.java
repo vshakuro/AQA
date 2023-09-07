@@ -28,7 +28,6 @@ public class Employee {
         personArray[4] = new Employee("Григорьев Григорий Григорьевич", "Работник","Grigoriev@gmail.com","8-800-555-35-35", 111, 18);
         for (Employee personArrayTemporaryPointer : personArray){
             personArrayTemporaryPointer.print();
-            personArray[0].print();
         }
     }
 }
