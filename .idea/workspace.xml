@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d5fe5b8-3cda-4466-a4c0-4b52778e15a3" name="Changes" comment="Adding answers" />
+    <list default="true" id="3d5fe5b8-3cda-4466-a4c0-4b52778e15a3" name="Changes" comment="Adding answers">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Animals/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Animals/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Animals/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Animals/Feeder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Animals/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Park.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +29,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Lesson_3" />
+        <entry key="$PROJECT_DIR$" value="Lesson_4" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,7 +50,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Lesson__4",
+    "git-widget-placeholder": "Lesson__5",
     "jdk.selected.JAVA_MODULE": "11",
     "last_opened_file_path": "C:/Users/dekan/IdeaProjects/ee",
     "onboarding.tips.debug.path": "C:/Users/dekan/IdeaProjects/AQA/Main/src/Main.java",
@@ -54,7 +63,7 @@
     <configuration name="AQA" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="main.java.Employee" />
+      <option name="MAIN_CLASS_NAME" value="main.java.Figures.Main" />
       <module name="AQA" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -166,7 +175,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/main" />
+                        <option value="Lesson_5" />
                       </list>
                     </value>
                   </entry>
