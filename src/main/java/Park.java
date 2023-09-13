@@ -14,7 +14,9 @@ public class Park {
         }
 
         public void attractionInfo() {
-            System.out.println("Название аттракциона - " + attractionName + "\nВремя работы - " + attractionWorkingTime + "\nЦена - " + attractionCost + "\n");
+            System.out.println("Название аттракциона - " + attractionName
+                    + "\nВремя работы - " + attractionWorkingTime
+                    + "\nЦена - " + attractionCost + "\n");
         }
     }
 
