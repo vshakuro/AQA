@@ -68,8 +68,7 @@ public class Main {
                 try {
                     sum += Integer.parseInt(array[i][j]);
                 } catch (NumberFormatException e) {
-                    System.out.print("Некорректные данные в ячейке "+  i + j);
-                    System.out.println();
+                    throw new MyArrayDataException("Некорректные данные в ячейке "+  i + j);
                 }
             }
         }
