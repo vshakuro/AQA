@@ -6,12 +6,6 @@ public class Circle implements Square{
     public String color;
     public String borderColor;
 
-    /**
-     * @param name
-     * @param radius
-     * @param color
-     * @param borderColor
-     */
     public Circle(String name, double radius, String color, String borderColor){
         this.name = name;
         this.radius = radius;
@@ -22,38 +16,22 @@ public class Circle implements Square{
     /**
      * @return double
      */
-    @Override
-    public double calculatePerimeter(){
-        double circleSquare = Math.PI * 2*radius;
-        return circleSquare;
-    }
-
-    /**
-     * @return double
-     */
     public double calculateSquare(){
-        double circleSquare = Math.PI * (radius * radius);
-        return circleSquare;
+        return Math.PI * (radius * radius);
     }
 
     /**
      * @return String
      */
-    public String setColor(){
+    public String getColor(){
         return color;
     }
 
     /**
      * @return String
      */
-    public String setColorBorder(){
+    public String getColorBorder(){
         return borderColor;
     }
 
-    /**
-     * @return String
-     */
-    public String getName(){
-        return name;
-    }
 }

@@ -8,14 +8,6 @@ public class Triangle implements Square {
     public String color;
     public String borderColor;
 
-    /**
-     * @param name
-     * @param sideA
-     * @param sideB
-     * @param sideC
-     * @param color
-     * @param borderColor
-     */
     public Triangle(String name, int sideA, int sideB, int sideC, String color, String borderColor) {
         this.name = name;
         this.sideA = sideA;
@@ -28,40 +20,23 @@ public class Triangle implements Square {
     /**
      * @return double
      */
-    public double calculatePerimeter() {
-        double perimeter = sideA + sideB + sideC;
-        return perimeter;
-    }
-
-    /**
-     * @return double
-     */
     public double calculateSquare() {
-        double square = Math.sqrt(calculatePerimeter() / 2 *
-                (calculatePerimeter() / 2 - sideA) *
-                (calculatePerimeter() / 2 - sideB) *
-                (calculatePerimeter() / 2 - sideC));
-        return square;
+        double p = calculatePerimeterTriangle(this.sideA, this.sideB,this.sideC);
+        return Math.sqrt(p * (p - sideA) * (p - sideB) * (p - sideC));
     }
 
     /**
      * @return String
      */
-    public String setColor() {
+    public String getColor() {
         return color;
     }
 
     /**
      * @return String
      */
-    public String setColorBorder() {
+    public String getColorBorder() {
         return borderColor;
     }
 
-    /**
-     * @return String
-     */
-    public String getName() {
-        return name;
-    }
 }

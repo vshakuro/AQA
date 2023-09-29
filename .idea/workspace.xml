@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d5fe5b8-3cda-4466-a4c0-4b52778e15a3" name="Changes" comment="Adding answers">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Animals/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Animals/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Animals/Dog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Animals/Feeder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Animals/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Employee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Park.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Animals/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Animals/Dog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Figures/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Figures/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Figures/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Figures/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Figures/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Figures/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Figures/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Figures/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Figures/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Figures/Triangle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,19 +45,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Lesson__5",
-    "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "C:/Users/dekan/IdeaProjects/ee",
-    "onboarding.tips.debug.path": "C:/Users/dekan/IdeaProjects/AQA/Main/src/Main.java",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Lesson__5&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/dekan/IdeaProjects/ee&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/dekan/IdeaProjects/AQA/Main/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.AQA">
     <configuration name="AQA" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />

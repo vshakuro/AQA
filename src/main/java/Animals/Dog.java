@@ -14,7 +14,7 @@ public class Dog extends main.java.Animals.Animal {
                 System.out.println("Собака " + name + " пробежала " + barrierLength + " метров");
             }
             else {
-                System.out.println("Собаки столько не бегают" + " (" + barrierLength + ")");
+                System.out.println("Собаки столько не бегают" + " (" + barrierLength + ") " + name);
             }
         } else {
             System.out.println("Количество метров не может быть меньше или равным 0" + " (" + barrierLength + ")");

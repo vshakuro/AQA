@@ -1,30 +1,30 @@
 package main.java.Figures;
 
 public interface Square {
-    /**
-     * @return double
-     */
-    public double calculatePerimeter();
 
     /**
      * @return double
      */
-    public double calculateSquare();
+    double calculateSquare();
 
     /**
      * @return String
      */
-    public default String setColor(){
-        return setColor();
-    }
-
+    String getColor();
     /**
      * @return String
      */
-    public default String setColorBorder(){
-        return setColorBorder();
+    String getColorBorder();
+
+    default double calculatePerimeterCircle(double radius){
+        return Math.PI * 2 * radius;
     }
-    public default String getName(){
-        return getName();
+
+    default double calculatePerimeterRectangle(int sideA, int sideB) {
+        return sideA + sideB;
+    }
+
+    default double calculatePerimeterTriangle(int sideA, int sideB, int sideC) {
+        return sideA + sideB + sideC;
     }
 }

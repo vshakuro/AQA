@@ -7,13 +7,6 @@ public class Rectangle implements Square {
     public String color;
     public String borderColor;
 
-    /**
-     * @param name
-     * @param sideA
-     * @param sideB
-     * @param color
-     * @param borderColor
-     */
     public Rectangle(String name, int sideA, int sideB, String color, String borderColor) {
         this.name = name;
         this.sideA = sideA;
@@ -25,37 +18,22 @@ public class Rectangle implements Square {
     /**
      * @return double
      */
-    public double calculatePerimeter() {
-        double perimeter = sideA + sideB;
-        return perimeter;
-    }
-
-    /**
-     * @return double
-     */
     public double calculateSquare() {
-        double square = sideA * sideB;
-        return square;
+        return sideA * sideB;
     }
 
     /**
      * @return String
      */
-    public String setColor() {
+    public String getColor() {
         return color;
     }
 
     /**
      * @return String
      */
-    public String setColorBorder() {
+    public String getColorBorder() {
         return borderColor;
     }
 
-    /**
-     * @return String
-     */
-    public String getName() {
-        return name;
-    }
 }
