@@ -1,38 +1,40 @@
 package myOrg.com;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import org.junit.jupiter.api.*;
+import static myOrg.com.App.factorial;
+import static org.junit.jupiter.api.Assertions.*;
 
-/**
- * Unit test for simple App.
- */
-public class AppTest 
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
-    {
-        super( testName );
+public class AppTest {
+    @Test
+    public void PositiveNumber() {
+        int number = 5;
+        int expected = 120;
+        int actual = factorial(number);
+        assertEquals(expected, actual);
     }
-
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
+    @Test
+    public void Zero() {
+        int number = 0;
+        int expected = 1;
+        int actual = factorial(number);
+        assertEquals(expected, actual);
     }
-
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
+    @Test
+    public void One() {
+        int number = 1;
+        int expected = 1;
+        int actual = factorial(number);
+        assertEquals(expected, actual);
+    }
+    @Test
+    public void NegativeNumber() {
+        int number = -5;
+        Throwable exception =
+                assertThrows(IllegalArgumentException.class, ()
+                        -> {
+                    factorial(number);
+                    throw new IllegalArgumentException("Отрицательное число");
+                });
+        assertEquals(exception.getMessage(), "Отрицательное число");
     }
 }
