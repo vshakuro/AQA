@@ -12,6 +12,7 @@ public class AppTest {
         int actual = factorial(number);
         assertEquals(expected, actual);
     }
+
     @Test
     public void Zero() {
         int number = 0;
@@ -19,6 +20,7 @@ public class AppTest {
         int actual = factorial(number);
         assertEquals(expected, actual);
     }
+
     @Test
     public void One() {
         int number = 1;
@@ -26,6 +28,7 @@ public class AppTest {
         int actual = factorial(number);
         assertEquals(expected, actual);
     }
+
     @Test
     public void NegativeNumber() {
         int number = -5;
@@ -33,8 +36,8 @@ public class AppTest {
                 assertThrows(IllegalArgumentException.class, ()
                         -> {
                     factorial(number);
-                    throw new IllegalArgumentException("Отрицательное число");
+                    throw new IllegalArgumentException("Число не может быть меньше нуля");
                 });
-        assertEquals(exception.getMessage(), "Отрицательное число");
+        assertEquals(exception.getMessage(), "Число не может быть меньше нуля");
     }
 }
