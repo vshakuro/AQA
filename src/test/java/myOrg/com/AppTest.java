@@ -1,38 +1,26 @@
 package myOrg.com;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import static myOrg.com.App.factorial;
+import org.testng.Assert;
+import org.testng.annotations.*;
 
-/**
- * Unit test for simple App.
- */
-public class AppTest 
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
-    {
-        super( testName );
+public class AppTest {
+    @Test (dataProvider = "data-correct")
+    public void correctNumbers(int number, int factorial) {
+        Assert.assertEquals(factorial, factorial(number));
     }
-
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
+    @Test (dataProvider = "data-incorrect", expectedExceptions = IllegalArgumentException.class)
+    public void incorrectNumbers(int number){
+        factorial(number);
     }
-
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
+    @DataProvider (name = "data-incorrect")
+    public Object[][] incorrectData()
     {
-        assertTrue( true );
+        return new Object[][] {{-5}};
+    }
+    @DataProvider (name = "data-correct")
+    public Object[][] correctData()
+    {
+        return new Object[][] {{5, 120}, {1, 1}, {0, 1}};
     }
 }
