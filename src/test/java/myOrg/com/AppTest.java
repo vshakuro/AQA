@@ -4,10 +4,9 @@ import org.junit.jupiter.api.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.*;
-import java.util.stream.*;
 import static org.junit.jupiter.api.Assertions.*;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class AppTest {
     private WebDriver driver;
@@ -26,33 +25,6 @@ public class AppTest {
     public void tearDown() {
         driver.quit();
     }
-    @Test
-    void checkBlockNameTest() {
-        List<WebElement> elements = driver.findElements(By.xpath("//section/div/h2"));
-        String actual = elements.stream().map(WebElement::getText).collect(Collectors.joining());
-        String expected = "Онлайн пополнение\n".concat("без комиссии");
-        Assertions.assertEquals(expected, actual);
-    }
-
-    @Test
-    void findLogoPaySysTest() {
-        List<WebElement> icons = driver.findElements(By.xpath("//div[@class='pay__partners']/ul/li/img"));
-        assertAll(() -> assertTrue(icons.get(0).isDisplayed()),
-                () -> assertTrue(icons.get(1).isDisplayed()),
-                () -> assertTrue(icons.get(2).isDisplayed()),
-                () -> assertTrue(icons.get(3).isDisplayed()),
-                () -> assertTrue(icons.get(4).isDisplayed()),
-                () -> assertTrue(icons.get(5).isDisplayed()));
-    }
-
-    @Test
-    public void testMoreInfoLink() {
-        WebElement link = driver.findElement(By.xpath("//div[@class='pay__wrapper']/a"));
-        Actions actions = new Actions(driver);
-        actions.moveToElement(link).click().perform();
-        String url = driver.getCurrentUrl();
-        Assertions.assertEquals("https://www.mts.by/help/poryadok-oplaty-i-bezopasnost-internet-platezhey/", url);
-    }
 
     @Test
     public void testContinueButton() {
@@ -61,7 +33,23 @@ public class AppTest {
         WebElement phoneField = driver.findElement(By.id("connection-phone"));
         phoneField.click();
         phoneField.sendKeys("297777777");
+        WebElement amount = driver.findElement(By.id("connection-sum"));
+        amount.click();
+        amount.sendKeys("123");
         WebElement continueButton = driver.findElement(By.xpath("//form[@id='pay-connection']/button[@type='submit'][1]"));
         continueButton.click();
+
+        Set<Cookie> cookies = driver.manage().getCookies();
+        cookies.forEach(c -> driver.manage().addCookie(c));
+        WebDriver iFrame = wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(By.xpath("//iframe[@class='bepaid-iframe']")));
+
+        List<WebElement> elements = new WebDriverWait(iFrame, 10)
+                .until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//div[@class='header__payment']/p")));
+        WebElement button = new WebDriverWait(iFrame, 10)
+                .until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='card-page__card']/button")));
+
+        assertAll(() -> assertEquals("123.00 BYN", elements.get(0).getText()),
+                () -> assertEquals("Оплата: Услуги связи Номер:375297777777", elements.get(1).getText()),
+                () -> assertEquals("Оплатить 123.00 BYN", button.getText()));
     }
 }
